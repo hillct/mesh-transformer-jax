@@ -6,7 +6,7 @@ RUN apt update && \
 
 WORKDIR /app/
 COPY . /app/
-RUN git clone https://github.com/kingoflolz/mesh-transformer-jax && \
+RUN git clone https://github.com/hillct/mesh-transformer-jax && \
     pip install -r mesh-transformer-jax/requirements.txt && \
     pip install mesh-transformer-jax/ jax==0.2.12 && \
     pip install fastapi uvicorn requests aiofiles aiohttp && \
